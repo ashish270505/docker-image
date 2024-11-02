@@ -17,4 +17,3 @@ spec:
         image: ashish2705/maven-hello-world:latest  # Matches the image name in Jenkins
         ports:
         - containerPort: 3000  # App’s exposed port in the container
-		type: LoadBalancer
