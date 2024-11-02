@@ -7,6 +7,6 @@ spec:
     app: my-app
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080  # Port your container is exposing
+      port: 30
+      targetPort: 3000  # Port your container is exposing
   type: LoadBalancer  # Use NodePort for local testing, LoadBalancer for cloud
