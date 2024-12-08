@@ -6,8 +6,9 @@ pipeline {
             steps {
                 script {
                     // Apply deployment and service YAML files
-                    bat 'kubectl apply -f Deployment.yaml --validate=false'
-                    bat 'kubectl apply -f service.yaml --validate=false'
+                    cd C:\Users\abhij
+                    bat 'kubectl apply -f Deployment.yaml'
+                    bat 'kubectl apply -f service.yaml'
                     bat 'kubectl get deployments'
                 }
             }
