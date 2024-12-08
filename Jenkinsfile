@@ -23,8 +23,8 @@ pipeline {
             steps {
                 script {
                     // Apply deployment and service YAML files
-                    sh 'kubectl apply -f Deployment.yaml'
-                    sh 'kubectl apply -f service.yaml'
+                    bat 'kubectl apply -f Deployment.yaml'
+                    bat 'kubectl apply -f service.yaml'
                 }
             }
         }
